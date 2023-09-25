@@ -14,7 +14,6 @@ noisy_image = image * ( 1 + np.random.normal(0, max_std_dev, image.shape))
 
 noisy_image = np.clip(noisy_image, 0, 255).astype(np.uint8)
 
-import matplotlib.pyplot as plt
 
 # Display the noisy image
 cv2.imshow("Noisy Image", noisy_image)
